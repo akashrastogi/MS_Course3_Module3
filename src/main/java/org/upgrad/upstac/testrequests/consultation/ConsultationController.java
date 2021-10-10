@@ -73,7 +73,7 @@ public class ConsultationController {
 
         // Doctor receives all the requests that are assigned to him/her
         User doctor = userLoggedInService.getLoggedInUser();
-        return testRequestQueryService.findByTester(doctor);
+        return testRequestQueryService.findByDoctor(doctor);
 
         //Implement this method
 
